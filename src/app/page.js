@@ -1,15 +1,14 @@
+import Header from "./component/Header";
+import Footer from "./component/Footer";
+import TaskInput from "./component/TaskInput";
+import Task from "./component/Task";
+
 export default function Home() {
   return (
     // Main container
     <div className="container mx-auto">
       {/* header section */}
-      <div>
-        <h4 className="display-4 fst-italic text-center">Todo List Mock Up</h4>
-        <p className="text-secondary text-center">
-          This lab teach you how to split react component(s)
-        </p>
-      </div>
-
+      <Header/>
       {/* tasks container */}
       <div style={{ maxWidth: "400px" }} className="mx-auto">
         {/* task input */}
@@ -41,11 +40,7 @@ export default function Home() {
       </div>
 
       {/* //footer section */}
-      <div className="mt-3">
-        <p className="text-secondary text-center">
-          copyright © 2023 Chayanin Suatap 12345678
-        </p>
-      </div>
+      <Footer />
     </div>
   );
 }
